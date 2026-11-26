@@ -9,8 +9,8 @@ namespace Interview.Application.Interface.Repositories
         Task<IEnumerable<T>> GetAllAsync();
         Task<T?> GetByIdAsync(Guid Id);
         Task<T> CreateAsync(T entity);
-        void UpdateAsync(T entity);
-        void DeleteAsync(T entity);
+        Task UpdateAsync(T entity);
+        Task DeleteAsync(T entity);
         Task<bool> ExistAsync(Guid Id);
     }
 }
