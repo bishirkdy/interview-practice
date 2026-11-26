@@ -13,8 +13,8 @@ namespace Interview.Infrastructure.Persistence.Configurations
         {
             builder.HasKey(d => d.Id);
             builder.Property(d => d.DepartmentName)
-            .IsRequired()
-            .HasMaxLength(50);
+            .HasConversion<int>()
+            .IsRequired();
 
             builder.HasIndex(d => d.DepartmentName)
                 .IsUnique();

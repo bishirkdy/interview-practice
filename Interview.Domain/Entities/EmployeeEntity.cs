@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Interview.Domain.Enum;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,9 +11,9 @@ namespace Interview.Domain.Entities
         public string Name { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public decimal Salary { get; set; }
+        public EmployeeRole Role { get; set; } = EmployeeRole.Employee;
         public Guid DepartmentId { get; set; }
         public string PasswordHash { get; set; } = string.Empty;
-        public string Role { get; set; } = string.Empty;
         public decimal Balance { get; set; }
         public bool IsActive { get; set; } = true;
         public bool IsDeleted { get; set; } = false;

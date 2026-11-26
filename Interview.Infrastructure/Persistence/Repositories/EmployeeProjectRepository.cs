@@ -1,9 +1,7 @@
 ﻿using Interview.Application.Interface.Repositories;
 using Interview.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Interview.Infrastructure.Persistence.Repositories
 {

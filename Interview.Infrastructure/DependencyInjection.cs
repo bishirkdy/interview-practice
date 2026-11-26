@@ -18,8 +18,12 @@ namespace Interview.Infrastructure
             });
 
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            services.AddScoped<IProjectRepository, ProjectRepository>();
+            services.AddScoped<IEmployeeProjectRepository, EmployeeProjectRepository>();
 
-                return services;
+            return services;
         }
     }
 }
